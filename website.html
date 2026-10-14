@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>seva amruttulya </title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: #080808;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: #e70a0a;
+  font-size: 27px;
+  font-weight: italic;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #e50e15;
+}
+
+.hero {
+  height: 85vh;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background:
+    linear-gradient(#0009, #000b),
+    url("file:///C:/Users/HP/OneDrive/Documents/WhatsApp%20Image%202026-10-14%20at%2015.16.30.jpeg")
+   
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 7vw, 72px);
+  color: #e6c477;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #d8b46a;
+  color: #111;
+  padding: 14px 25px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+h2 {
+  color: #e6c477;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #ccc;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #202020;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 18px 8px 10px;
+}
+
+.card p {
+  color: #ccc;
+  padding: 0 12px;
+}
+
+.price {
+  color: #e6c477 !important;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.menu {
+  max-width: 650px;
+  margin: auto;
+  text-align: left;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px 5px;
+  border-bottom: 1px solid #444;
+}
+
+.menu-item span:last-child {
+  color: #e6c477;
+}
+
+.booking {
+  max-width: 550px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  background: #202020;
+  border: 1px solid #555;
+  color: white;
+  border-radius: 4px;
+}
+
+footer {
+  background: #080808;
+  padding: 35px 15px;
+  text-align: center;
+  color: #bbb;
+  line-height: 2;
+}
+
+footer strong {
+  color: #e6c477;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #168b4a;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    line-height: 2.5;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ROYAL TASTE</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#food">Food Menu</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>seva amruttulya</h1>
+  <p>Luxury Dining • Delicious Food • Great Memories</p>
+  <a href="#food" class="btn">Explore Menu</a>
+</div>
+
+<section id="about">
+  <h2>WELCOME TO seva amruttulya</h2>
+  <p class="description">
+    Enjoy delicious food, warm hospitality and a premium atmosphere
+    with your family and friends.
+  </p>
+</section>
+
+<section id="food">
+  <h2>Our Food Menu</h2>
+  <p class="description">Our popular dishes</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="file:///C:/Users/HP/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/6A4A06ED4A8F821C55FEDCA40EEECA3B87D13BE2/transfers/2026-42/WhatsApp%20Image%202026-10-14%20at%2015.46.01.jpeg">
+      <h3>misal pav </h3>
+      <p>Traditional Indian flavours.</p>
+      <p class="price">₹70</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5H_seu7dvjyUguahDSwYNvehdsJ8e_YjjSqR9XbKGQ&s=10">
+      <h3>special poha </h3>
+      <p>Fresh and cheesy pizza.</p>
+      <p class="price">₹20</p>
+    </div>
+
+    <div class="card">
+      <img src="C:/Users/HP/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/6A4A06ED4A8F821C55FEDCA40EEECA3B87D13BE2/transfers/2026-42/WhatsApp%20Image%202026-10-14%20at%2018.28.16.jpeg">
+      <h3>Special veg thali</h3>
+      <p>Deliciously grilled favourites.</p>
+      <p class="price">₹10</p>
+    </div>
+  </div>
+</section>
+
+<section id="bar">
+  <h2> Menu</h2>
+  <p class="description">Refreshing drinks and beverages</p>
+
+  <div class="menu">
+    <div class="menu-item">
+      <span>Special Mocktail</span><span>₹150</span>
+    </div>
+    <div class="menu-item">
+      <span>Fresh Lime Soda</span><span>₹80</span>
+    </div>
+    <div class="menu-item">
+      <span>Fresh Fruit Juice</span><span>₹120</span>
+    </div>
+    <div class="menu-item">
+      <span>Premium Beverage Selection</span><span>Ask us</span>
+    </div>
+  </div>
+
+  <p class="description" style="margin-top:20px">
+    Alcoholic beverages, if served, are subject to applicable licences
+    and legal-age requirements.
+  </p>
+</section>
+
+<section id="booking">
+  <h2>Book a Table</h2>
+  <p class="description">Send a reservation request</p>
+
+  <form class="booking" id="bookingForm">
+    <input id="name" placeholder="Your Name" required>
+    <input id="phone" type="tel" placeholder="Mobile Number" required>
+    
+
+    <select id="guests" required>
+      <option value="">Number of Guests</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+
+    <textarea id="note" placeholder="Special requests (optional)"></textarea>
+
+    <button class="btn" type="submit">Book Through WhatsApp</button>
+  </form>
+  <p id="result" style="margin-top:20px;color:#e6c477"></p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="description">
+    Address: Add your restaurant address<br>
+    Phone: Add your contact number<br>
+    Opening Hours: Add your timings
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/ffVtaKdW8Z21FZP26?g_st=ac"
+     target="_blank" rel="noopener noreferrer">
+    Find Us on Google Maps
+  </a>
+</section>
+
+<footer>
+  <strong>ROYAL TASTE BAR & RESTAURANT</strong><br>
+  Delicious Food | Premium Hospitality<br>
+  © 2026 Royal Taste. All Rights Reserved.
+</footer>
+
+<a class="whatsapp"
+   id="whatsapp"
+   href="#booking">
+   WhatsApp Booking
+</a>
+
+<script>
+// Replace with your real business WhatsApp number.
+// India example format: 91 followed by your 10-digit number.
+const WHATSAPP_NUMBER = "7720858712";
+
+const dateInput = document.getElementById("date");
+const now = new Date();
+dateInput.min = new Date(
+  now.getTime() - now.getTimezoneOffset() * 60000
+).toISOString().slice(0, 10);
+
+document.getElementById("bookingForm").addEventListener("submit",
+function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const date = dateInput.value;
+  const time = document.getElementById("time").value;
+  const guests = document.getElementById("guests").value;
+  const note = document.getElementById("note").value.trim();
+
+  if (WHATSAPP_NUMBER.includes("X")) {
+    document.getElementById("result").textContent =
+      "Please add your real WhatsApp number in the HTML code.";
+    return;
+  }
+
+  const message =
+    "Hello Royal Taste! I want to request a table booking.%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Date: " + encodeURIComponent(date) + "%0A" +
+    "Time: " + encodeURIComponent(time) + "%0A" +
+    "Guests: " + encodeURIComponent(guests) + "%0A" +
+    "Notes: " + encodeURIComponent(note || "None");
+
+  window.open(
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
+    "_blank"
+  );
+
+  document.getElementById("result").textContent =
+    "WhatsApp opened. Send the message to request your booking.";
+});
+
+document.getElementById("whatsapp").addEventListener("click",
+function(event) {
+  event.preventDefault();
+  document.getElementById("booking").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+</script>
+
+</body>
+</html>
